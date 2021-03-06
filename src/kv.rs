@@ -19,7 +19,7 @@ impl KvStore {
         return self.map.get(&key).cloned();
     }
 
-    pub fn remove(&self, key: String) {
-        unimplemented!();
+    pub fn remove(&mut self, key: String) {
+        self.map.remove(&key);
     }
 }
