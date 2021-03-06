@@ -3,6 +3,7 @@ use std::collections::HashMap;
 /// KvStore persists key/value entries.
 ///
 /// Entries are kept in memory and not persisted into disk.
+#[derive(Default)]
 pub struct KvStore {
     map: HashMap<String, String>,
 }
